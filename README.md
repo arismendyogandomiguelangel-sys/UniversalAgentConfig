@@ -73,7 +73,26 @@ curl -fsSL https://raw.githubusercontent.com/angelarismendyroa-lgtm/UniversalAge
 
 ---
 
-## Stack Predeterminado
+## Ecosistemas
+
+UniversalAgentConfig soporta dos ecosistemas:
+
+### ALiaNeD OS
+Solución dentro del framework ALiaNeD (ERP, módulos, Oracle server, Dokploy).
+- Incluye los 3 agentes comerciales: Abigail (Recepcionista), José (Supervisor), Daniel (Asesor)
+- Stack: Next.js + Stitch Labs + Zustand + n8n + Flowise
+
+### Proyecto Independiente
+App/web/sistema desconectado de ALiaNeD.
+- Puede estar en cualquier servidor: Oracle, GCP, Alibaba, Vercel, Hostinger
+- Puede incluir agentes MayordomIA comerciales opcionales
+- Stack: DEFAULT_STACK.md
+
+Ver `ECOSYSTEM_SELECTOR.md` para determinar el ecosistema al inicio del proyecto.
+
+---
+
+## Perfiles
 
 | Componente | Default | Alternativas |
 |------------|---------|--------------|

@@ -75,6 +75,7 @@ Antes de crear cualquier archivo, el agente pregunta solo esto:
 ```
 "Configuración predeterminada detectada. Confirma o ajusta:
 
+  Ecosistema    : ALiaNeD OS / Proyecto independiente  ← primero esto
   Base de datos : Supabase           ¿cambiar? [s/n]
   ORM           : Prisma             ¿usar Drizzle? [s/n]
   Diseño        : Stitch Labs        ¿cambiar? [s/n]

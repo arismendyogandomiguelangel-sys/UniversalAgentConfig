@@ -21,6 +21,7 @@ and a **specialization guide** so you spend tokens where they have the most impa
 Before writing a single line of code, do this:
 
 ```
+0. Read ECOSYSTEM_SELECTOR.md         → determine project ecosystem first
 1. mem_search("current state [project-name]")
 2. Read ROADMAP.md                    → where are we?
 3. Read .agent/context.md             → what is this project?
