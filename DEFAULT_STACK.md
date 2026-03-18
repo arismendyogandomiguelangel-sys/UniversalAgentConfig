@@ -36,14 +36,17 @@
 - Solo cambiar a Claude/Gemini API si el cliente lo requiere explícitamente
 
 ### Despliegue
-- **Vercel** como predeterminado
+- **Vercel** como predeterminado para proyectos propios
+- **Dokploy** (gestiona Oracle, GCP, Alibaba) para clientes:
+  - Oracle Free Tier: clientes sin presupuesto de infraestructura
+  - GCP: proyectos que usan servicios Google (Firebase, BigQuery, Vertex AI)
+  - Alibaba: clientes en Asia o que ya tienen cuenta Alibaba
+- **Hostinger**: clientes con hosting compartido tradicional
 - **Regla crítica:** el deploy a producción ocurre SOLO cuando:
   1. El proyecto está completamente desarrollado y probado en `dev`
   2. Claude ha revisado y auditado los cambios (ver protocolo abajo)
   3. GitHub Actions pasa todos los checks (tests, lint, build)
   4. El usuario autoriza explícitamente el merge a `main`
-
-- Si el cliente tiene Dokploy o Hostinger → preguntar antes de configurar deploy
 
 ---
 
@@ -72,14 +75,22 @@ Antes de crear cualquier archivo, el agente pregunta solo esto:
 ```
 "Configuración predeterminada detectada. Confirma o ajusta:
 
-  Base de datos : Supabase       ¿cambiar? [s/n]
-  ORM           : Prisma         ¿usar Drizzle? [s/n]
-  Diseño        : Stitch Labs    ¿cambiar? [s/n]
-  Deploy        : Vercel         ¿cambiar? (dokploy/hostinger/otro)
-  IA incrustada : Qwen API       ¿cambiar? [s/n]
+  Base de datos : Supabase           ¿cambiar? [s/n]
+  ORM           : Prisma             ¿usar Drizzle? [s/n]
+  Diseño        : Stitch Labs        ¿cambiar? [s/n]
+  Deploy        : Vercel (propios)   ¿cambiar? [s/n]
+                  Opciones: Vercel, Dokploy→Oracle, Dokploy→GCP, Dokploy→Alibaba, Hostinger
+  IA incrustada : Qwen API           ¿cambiar? [s/n]
 
   Si todo está bien, responde: ok"
 ```
+
+**Guía de deploy por cliente:**
+- Proyectos propios → Vercel
+- Cliente sin presupuesto → Dokploy → Oracle (Free Tier)
+- Cliente usa Firebase/BigQuery → Dokploy → GCP
+- Cliente en Asia/Alibaba → Dokploy → Alibaba
+- Cliente quiere hosting compartido → Hostinger
 
 Si el usuario responde "ok" o "sí" o no responde nada relevante → arranca con el stack completo sin más preguntas.
 

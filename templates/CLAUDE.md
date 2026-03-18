@@ -3,8 +3,8 @@
 
 @AGENTS.md
 @DEFAULT_STACK.md
-@templates/PROJECT_BRIEF.md
-@templates/AI_BUDGET.md
+@PROJECT_BRIEF.md
+@AI_BUDGET.md
 @templates/.agent/context.md
 @templates/.agent/conventions.md
 @templates/.agent/handoffs/current-state.md
