@@ -5,9 +5,9 @@
 @DEFAULT_STACK.md
 @templates/PROJECT_BRIEF.md
 @templates/AI_BUDGET.md
-@.agent/context.md
-@.agent/conventions.md
-@.agent/handoffs/current-state.md
+@templates/.agent/context.md
+@templates/.agent/conventions.md
+@templates/.agent/handoffs/current-state.md
 
 ## MCP Servers activos
 Ver mcp_config.json en la raíz del proyecto.
