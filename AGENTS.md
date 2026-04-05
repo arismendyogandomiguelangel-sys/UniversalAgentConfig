@@ -198,6 +198,14 @@ GEMINI.md          ← Antigravity / Gemini CLI specifics
 
 ---
 
+## Strict Confidentiality Protocol (CEO Directives)
+
+> **CRITICAL SECURITY RULE**: ALiaNeD respects the strict privacy of executive strategic documentation.
+> Any folder containing CEO documentation, project specifications, financial data, or strategic plans (specifically `Doc-CEO/`, `Doc-Arismendy/`, or matching `Doc-*`) must **NEVER** be committed to version control, pushed to GitHub, or published to production environments under any circumstances.
+> These files are strictly governed by `.gitignore` rules in development and excluded from any build or deployment steps in production.
+
+---
+
 ## What Makes a Good Handoff
 
 When you leave a session, the next agent (even if it's you with a new context)
