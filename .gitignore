@@ -49,3 +49,9 @@ prisma/migrations/
 # Engram (don't commit memories)
 .engram/
 *.db
+
+# 🛡️ SEGURIDAD DIRECCIÓN / CEO 🛡️
+# Documentación estructurada estratégica y confidencial de Arismendy / ALiaNeD
+/Doc-CEO/
+/Doc-Arismendy/
+/Doc-*/
