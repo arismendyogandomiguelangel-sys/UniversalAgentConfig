@@ -15,4 +15,5 @@
 [Cuándo son requeridos, qué framework]
 
 ## Reglas específicas
-[Cualquier regla particular de este proyecto]
+1. **🛡️ PRIVACIDAD DEL CEO**: Toda documentación estratégica, financiera o sensible de ALiaNeD contenida en carpetas como `Doc-CEO/` o `Doc-Arismendy/` es ESTRICTAMENTE CONFIDENCIAL. Nunca debe subirse a repositorios (Git) ni publicarse en ninguna etapa (desarrollo o producción). Los archivos de estas carpetas están globalmente regidos por `.gitignore`.
+2. [Cualquier otra regla particular de este proyecto]
